@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Čištění a ochrana povrchů</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Prodej nano-ekologických úklidových a čistících prostředků. Speciální čistící práce - čištění fasád, střech, chodníků, čištění podlah, koberců, čalounění.">
+    <meta name="author" content="">
+    <meta name="keywords" content="nano-ekologický, úklidový, čistící, prostředek, čištění fasád, čištění střech">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.jpg">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    
+    <style>
+        /* Additional legacy-specific styles */
+        .hero-slider {
+            min-height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .service-card {
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--bs-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .client-logo {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            max-height: 80px;
+            object-fit: contain;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-info) 100%);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-dark {
+            background-color: #212529;
+            color: #adb5bd;
+        }
+        
+        .footer-dark a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-dark a:hover {
+            color: var(--bs-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a class="navbar-brand d-flex align-items-center" href="legacy.html">
+                        <i class="bi bi-house-door-fill me-2" style="font-size: 1.5rem; color: var(--bs-primary);"></i>
+                        <span class="logo-text-primary">ČIŠTĚNÍ A OCHRANA</span>
+                    </a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="mailto:info@jit.cz" class="me-4">
+                        <i class="bi bi-envelope"></i> Email: info@jit.cz
+                    </a>
+                    <a href="tel:+420725044983">
+                        <i class="bi bi-telephone"></i> Hotline: +420 725 044 983
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="legacy.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nabidka-sluzeb.html">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cenik.html">Ceník</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://eshop.cisteniaochrana.cz" target="_blank">E-shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reference.html">Reference</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nabidka-prace-myti-cisteni-fasad-strech-kobercu.html">Zaměstnání</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active hero-slider" style="background-image: url('assets/img/sliders/1B.jpg');">
+                <div class="container text-center">
+                    <h2 class="display-4 fw-bold mb-4"><i>ČIŠTĚNÍ A OCHRANA</i><br><i>STŘEŠNÍ KRYTINY</i><br><i>FASÁD A DLAŽBY</i></h2>
+                    <p class="lead"><i>odstranění mechu, špíny, usazenin</i><br><i>prodloužení životnosti</i></p>
+                </div>
+            </div>
+            <div class="carousel-item hero-slider" style="background-image: url('assets/img/sliders/3b.jpg');">
+                <div class="container text-center">
+                    <h2 class="display-4 fw-bold mb-4"><i>ČIŠTĚNÍ, RENOVACE<br>DŘEVĚNÝCH PODLAH</i></h2>
+                    <p class="lead">
+                        <i>hloubkové čištění dřeva</i><br>
+                        <i>broušení parket, dřeva</i><br>
+                        <i>olejování, voskování, lakování</i><br>
+                        <i>kvalitní ekologické produkty BONA</i>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item hero-slider" style="background-image: url('assets/img/sliders/4.jpg'); background-color: #CCC;">
+                <div class="container text-center">
+                    <h2 class="display-4 fw-bold mb-4"><i>ČIŠTĚNÍ, IMPREGNACE</i><br><i>PVC, VINYL PODLAHY</i><br><i>MARMOLEA, DLAŽBY</i></h2>
+                    <p class="lead"><i>strojové čištění</i><br><i>nano impregnace, vosk</i></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h3 class="mb-3">Provádíme čištění a ochranu povrchů. Dodáváme nano-ekologické čistící prostředky.</h3>
+                    <p class="mb-0">Provádíme čištění střech, fasád, chodníků, podlah, koberců v Brně, Vyškově, Slavkově u Brna, Bučovicích, Kyjově, Uherském Hradišti, Břeclavi, Mikulově, Hodoníně, Zlíně a dalších městěch Jihomoravského, Zlínského, Olomouckého kraje. Používáme moderní metody a zařízení, které zajišťují nejlepší výsledek čištění a jsou šetrné k materiálům. Na přání zákazníka aplikujeme ochranné impregnace povrchů. Ty spolu s pravidelných čištěním prodlužují životnost střechy, fasády, podlahy, koberců.</p>
+                </div>
+                <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
+                    <a href="kontakt.html" class="btn btn-light btn-lg">
+                        <i class="bi bi-telephone"></i> Objednávky, dotazy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-house service-icon"></i>
+                            <h2 class="h4 mb-3">ČIŠTĚNÍ A OCHRANA STŘECH</h2>
+                            <p class="text-muted">Čištění střešní krytiny - tašek, plechu, břidlice. Odstranění mechu, smogu, špíny ze střechy. Možnost ochranné impregnace střechy proti mechu, účinkům povětrnostních podmínek. Prodloužení životnosti střechy.</p>
+                            <a href="myti-strech.html" class="btn btn-outline-primary">více o mytí střechy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-building service-icon"></i>
+                            <h2 class="h4 mb-3">ČIŠTĚNÍ A OCHRANA FASÁD</h2>
+                            <p class="text-muted">Mytí fasád. Odstranění špíny, plísní, graffiti z fasády. Možnost ochranné impregnace proti opětovnému ušpinění.</p>
+                            <a href="myti-fasad.html" class="btn btn-outline-primary">více o mytí fasády</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-grid-3x3-gap service-icon"></i>
+                            <h2 class="h4 mb-3">ČIŠTĚNÍ A OCHRANA PODLAH</h2>
+                            <p class="text-muted">
+                                <a href="cisteni-renovace-lakovani-drevenych-podlah-parket.html" class="text-decoration-none">Čištění, renovace dřevěných podlah</a><br>
+                                <a href="hloubkove-cisteni-voskovani-vinyl-PVC-marmolea-podlah.html" class="text-decoration-none">Čištění a impregnace podlah z vinylu, PVC, marmolea</a><br>
+                                <a href="cisteni-impregnace-schodu-chodeb.html" class="text-decoration-none">Čištění a impregnace schodů, chodeb</a><br>
+                                <a href="cisteni-keramicke-dlazby-spar.html" class="text-decoration-none">Čištění keramické dlažby, dlaždic</a><br>
+                                <a href="" class="text-decoration-none">Čištění a impregnace přírodního kamene, terazza, terakoty</a>
+                            </p>
+                            <a href="cisteni-podlah.html" class="btn btn-outline-primary">více o čištění podlah</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-cart service-icon"></i>
+                            <h2 class="h4 mb-3">PRODEJ NANO-EKOLOGICKÝCH ČISTÍCÍCH PROSTŘEDKŮ</h2>
+                            <p class="text-muted">Vybrané ekologické čisticí prostředky pro domácnost. Ušetří váš čas a námahu.</p>
+                            <a href="http://eshop.cisteniaochrana.cz" target="_blank" class="btn btn-outline-primary">VSTUP DO ESHOPU</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-square service-icon"></i>
+                            <h2 class="h4 mb-3">ČIŠTĚNÍ A OCHRANA DLAŽBY</h2>
+                            <p class="text-muted">Čištění zámkové dlažby, betonových dlaždic, betonových chodníků, keramické dlažby. Odstranění mechu, špíny, usazenin.</p>
+                            <a href="myti-betonu-chodniku-dlazby.html" class="btn btn-outline-primary">více o čištění dlažby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-list-ul service-icon"></i>
+                            <h2 class="h4 mb-3">DALŠÍ ČIŠTĚNÍ</h2>
+                            <ul class="list-unstyled text-start text-muted">
+                                <li class="mb-2"><a href="nano-impregnace.html" class="text-decoration-none">- Nano impregnace podlah, skla, nábytku, atd.</a></li>
+                                <li class="mb-2"><a href="myti-oken-zaluzii.html" class="text-decoration-none">- Mytí oken, žaluzií, prosklenných ploch</a></li>
+                                <li class="mb-2"><a href="http://primauklidfirmy.cz/cisteni-kobercu-brno-vyskov.html" target="_blank" class="text-decoration-none">- Čištění koberců a čalounění</a></li>
+                                <li class="mb-2"><a href="pro-firmy.html" class="text-decoration-none">- Přehled služeb pro firmy</a></li>
+                                <li class="mb-2"><a href="nabidka-sluzeb.html" class="text-decoration-none">- Přehled všech služeb</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Naši zákazníci</h2>
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/akuna.png" alt="Akuna" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/better.png" alt="Better" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/empate.png" alt="Empate" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/carmen.png" alt="Carmen" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/tremco.png" alt="Tremco" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/rauscher.png" alt="Rauscher" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/ohk.png" alt="OHK" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/ckopk.png" alt="CKOPK" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/clients2/telco.png" alt="Telco" class="img-fluid client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">ČIŠTĚNÍ A OCHRANA</h5>
+                    <p>Čištění a ochrana střech, fasád, dlažby, podlah, koberců v Brně, Vyškově, Slavkově u Brna, Bučovicích, Kyjově, Uherském Hradišti, Břeclavi, Mikulově, Hodoníně, Zlíně a dalších městěch Jihomoravského, Zlínského, Olomouckého kraje.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Odkazy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="nabidka-sluzeb.html"><i class="bi bi-arrow-right me-2"></i>Služby</a></li>
+                        <li class="mb-2"><a href="http://www.primaukliddomacnosti.cz" target="_blank"><i class="bi bi-arrow-right me-2"></i>Úklid domácností</a></li>
+                        <li class="mb-2"><a href="http://eshop.cisteniaochrana.cz" target="_blank"><i class="bi bi-arrow-right me-2"></i>Čistící prostředky</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Kontaktujte nás</h5>
+                    <p>
+                        <i class="bi bi-telephone me-2"></i>tel: <a href="tel:+420725044983">+420 725 044 983</a><br>
+                        <i class="bi bi-envelope me-2"></i>email: <a href="mailto:info@jit.cz">info@jit.cz</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #495057;">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-white" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white" aria-label="Skype"><i class="bi bi-skype fs-5"></i></a>
+                        <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Bootstrap CSS Variable Overrides for Cleaning Business Theme */
+
+:root {
+  /* Primary Blue - Trust, professionalism, cleanliness */
+  --bs-primary: #0066CC;
+  --bs-primary-rgb: 0, 102, 204;
+  --bs-primary-text-emphasis: #0056B3;
+  --bs-primary-bg-subtle: #E6F2FF;
+  --bs-primary-border-subtle: #B3D9FF;
+  
+  /* Secondary Teal/Cyan - Fresh, modern, eco-friendly */
+  --bs-info: #17A2B8;
+  --bs-info-rgb: 23, 162, 184;
+  --bs-info-text-emphasis: #138496;
+  --bs-info-bg-subtle: #D1ECF1;
+  --bs-info-border-subtle: #A3D5E0;
+  
+  /* Success Green - Eco-friendly messaging */
+  --bs-success: #198754;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-success-text-emphasis: #146C43;
+  --bs-success-bg-subtle: #D1E7DD;
+  --bs-success-border-subtle: #A3CFBB;
+  
+  /* Neutral Colors */
+  --bs-secondary: #6C757D;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-body-color: #212529;
+  --bs-body-bg: #FFFFFF;
+  --bs-body-secondary-color: #6C757D;
+  --bs-body-secondary-bg: #F8F9FA;
+  
+  /* Border Colors */
+  --bs-border-color: #DEE2E6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  
+  /* Link Colors */
+  --bs-link-color: #0066CC;
+  --bs-link-hover-color: #0056B3;
+}
+
+/* Custom Brand Colors */
+.brand-primary {
+  color: var(--bs-primary);
+}
+
+.brand-bg-primary {
+  background-color: var(--bs-primary);
+}
+
+.brand-text-secondary {
+  color: var(--bs-secondary);
+}
+
+/* Active Navigation Link Styling */
+.navbar-nav .nav-link.active {
+  color: var(--bs-primary) !important;
+  border-bottom: 2px solid var(--bs-primary);
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Button Enhancements */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-text-emphasis);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+}
+
+/* Typography Adjustments */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--bs-body-color);
+}
+
+/* Utility Bar Styling */
+.utility-bar {
+  background-color: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.utility-bar a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.utility-bar a:hover {
+  color: var(--bs-primary);
+}
+
+.utility-bar i {
+  margin-right: 0.5rem;
+  color: var(--bs-primary);
+}
+
+/* Logo and Brand Styling */
+.logo-text-primary {
+  color: var(--bs-primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo-text-secondary {
+  color: var(--bs-secondary);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Content Section Spacing */
+.content-section {
+  padding: 3rem 0;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.cta-button i {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .logo-text-primary {
+    font-size: 1.2rem;
+  }
+  
+  .logo-text-secondary {
+    font-size: 0.8rem;
+  }
+  
+  .content-section {
+    padding: 2rem 0;
+  }
+}
